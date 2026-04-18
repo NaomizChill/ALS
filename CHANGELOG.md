@@ -2,6 +2,40 @@
 
 # 
 
+# \## \[v6.0.0] - 2026-04-18
+
+# 
+
+# \### Added
+
+# \- Lab 10: ACL configuration and traffic filtering in Packet Tracer
+
+# \- Packet Tracer topology file (10.pkt)
+
+# \- Lab report in Markdown, DOCX, and PDF formats
+
+# \- Presentation in Markdown, HTML, and PDF formats
+
+# \- Source archives for report and presentation
+
+# \- Video recordings for lab execution and defense
+
+# 
+
+# \### Changed
+
+# \- Repository structure aligned with course template
+
+# \- Updated documentation and release links for GitHub and GitVerse
+
+# 
+
+# \### Fixed
+
+# \- Access control rules for web, file, mail, DNS, FTP, Telnet, SMTP, POP3, SSH, and ICMP traffic
+
+# 
+
 # \## \[v5.0.0] - 2026-04-11
 
 # 

@@ -2,6 +2,48 @@
 
 # 
 
+# \## \[v7.0.0] - 2026-04-24
+
+# 
+
+# \### Added
+
+# \- Lab 11: NAT planning — connecting local network to the Internet via provider
+
+# \- Packet Tracer topology file (11.pkt)
+
+# \- L1, L2, L3 network diagrams with physical and logical topologies
+
+# \- VLAN table (management, servers, provider, dk, departments, adm, other)
+
+# \- Port assignment table for all switches and routers
+
+# \- Subnet plan table (10.128.x.x and 192.0.2.0/24 and 198.51.100.0/24)
+
+# \- Lab report in Markdown, DOCX, and PDF formats
+
+# \- Presentation in Markdown, HTML, and PDF formats
+
+# \- Video recordings for lab execution and defense
+
+# 
+
+# \### Changed
+
+# \- Extended network topology with provider and model Internet segments
+
+# \- Added provider-irkolontirskiy-gw-1, provider-irkolontirskiy-sw-1, internet-irkolontirskiy-sw-1
+
+# 
+
+# \### Fixed
+
+# \- DNS records configured for internal and external resources (esystem.pfur.ru, www.rudn.ru, www.yandex.ru etc.)
+
+# \- IP configuration set on model Internet servers (192.0.2.0/24)
+
+# 
+
 # \## \[v6.0.0] - 2026-04-18
 
 # 

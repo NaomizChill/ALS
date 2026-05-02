@@ -2,6 +2,54 @@
 
 # 
 
+# \## \[v8.0.0] - 2026-05-02
+
+# 
+
+# \### Added
+
+# \- Lab 12: NAT configuration — connecting local network to the Internet via provider
+
+# \- Packet Tracer topology file (12.pkt)
+
+# \- Initial configuration of provider-gw-1 and provider-sw-1
+
+# \- External interface setup on msk-donskaya-irkolontirskiy-gw-1
+
+# \- Default route configuration (0.0.0.0 0.0.0.0 198.51.100.1)
+
+# \- NAT overload configuration with ACL nat-inet and pool main-pool (198.51.100.2–198.51.100.14)
+
+# \- Static NAT rules for WEB (80), FTP (21), SMTP (25), POP3 (110), RDP (3389)
+
+# \- Access verification for dk, departaments, adm, admin and other segments
+
+# \- External server access checks (WEB, FTP, mail) from user-irkolontirskiy
+
+# \- Lab report in Markdown, DOCX, and PDF formats
+
+# \- Presentation in Markdown, HTML, and PDF formats
+
+# \- Video recordings for lab execution and defense
+
+# 
+
+# \### Changed
+
+# \- Updated repository structure for lab12
+
+# \- Updated documentation and release links for GitHub and GitVerse
+
+# 
+
+# \### Fixed
+
+# \- NAT inside/outside interface assignment on all subinterfaces
+
+# \- Static NAT port forwarding verified for all published services
+
+# 
+
 # \## \[v7.0.0] - 2026-04-24
 
 # 

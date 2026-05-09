@@ -2,6 +2,102 @@
 
 # 
 
+# \## \[v10.0.0] - 2026-05-09
+
+# \### Added
+
+# 
+
+# \- Lab 14: Static routing — connecting remote subnets via provider network using static routes
+
+# \- Packet Tracer topology file (14.pkt)
+
+# \- VLAN 5 (q42) and VLAN 6 (sochi) on provider switch `provider-irkolontirskiy-sw-1`, trunk ports FastEthernet0/3 and FastEthernet0/4
+
+# \- Subinterfaces FastEthernet0/1.5 and FastEthernet0/1.6 on central gateway `msk-donskaya-irkolontirskiy-gw-1`
+
+# \- Static routes on central gateway: 10.129.0.0/16 via 10.128.255.2, 10.130.0.0/16 via 10.128.255.6
+
+# \- Static default route on `msk-q42-irkolontirskiy-gw-1` via 10.128.255.1; subinterfaces f0/1.5, f0/0.201, f1/0.202
+
+# \- Static route to hostel subnet 10.129.128.0/17 via 10.129.1.2 on `msk-q42-irkolontirskiy-gw-1`
+
+# \- Static default route on `msk-hostel-irkolontirskiy-gw-1` via 10.129.1.1; VLAN 202 and VLAN 301 (hostel-main)
+
+# \- Static default route on `sch-sochi-irkolontirskiy-gw-1` via 10.128.255.5; subinterfaces f0/0.6, f0/0.401, f0/0.402
+
+# \- VLAN 201 (q42-main) on `msk-q42-irkolontirskiy-sw-1`, access port FastEthernet0/1
+
+# \- VLAN 301 (hostel-main) on `msk-hostel-irkolontirskiy-sw-1`, access port FastEthernet0/1
+
+# \- VLAN 401 (sochi-main) on `sch-sochi-irkolontirskiy-sw-1`, access port FastEthernet0/1
+
+# \- Static IP configuration for workstations: 10.129.0.200 (q42), 10.129.128.200 (hostel), 10.130.0.200 (sochi); DNS 10.128.0.5
+
+# \- NAT ACL extended with permits for hosts 10.129.0.200, 10.129.128.200, 10.130.0.200
+
+# \- Connectivity verified via ping (0% loss to all remote stations), tracert, and show ip route on all gateways
+
+# \- Lab report in Markdown, DOCX, and PDF formats
+
+# \- Presentation in Markdown, HTML, and PDF formats
+
+# \- Video recordings for lab execution and defense
+
+# Changed
+
+# 
+
+# \- Updated repository structure for lab14
+
+# \- Updated documentation and release links for GitHub and GitVerse
+
+# \- Extended static routing to cover all distributed sites: q42, hostel, and Sochi branch
+
+# 
+
+# \## \[v9.0.0] - 2026-05-02
+
+# \### Added
+
+# \- Lab 13: Static routing preparation — connecting remote subnets via provider network
+
+# \- Packet Tracer topology file (13.pkt)
+
+# \- Subnet for Moscow district 42 (msk-q42): gateway `msk-q42-irkolontirskiy-gw-1`, switch `msk-q42-irkolontirskiy-sw-1`
+
+# \- Subnet for Sochi branch (sch-sochi): gateway `sch-sochi-irkolontirskiy-gw-1`, switch `sch-sochi-irkolontirskiy-sw-1`
+
+# \- Hostel subnet: gateway `msk-hostel-irkolontirskiy-gw-1`, switch `msk-hostel-irkolontirskiy-sw-1`
+
+# \- Point-to-point links: 10.128.255.0/30 (link to q42), 10.128.255.4/30 (link to Sochi)
+
+# \- IP address plan for new segments: 10.129.0.0/24 (q42 users), 10.130.0.0/24 (Sochi users), 10.130.1.0/24 (Sochi management)
+
+# \- VLAN allocation for new segments: 201, 202 (q42), 401, 402 (Sochi)
+
+# \- Updated L1, L2, L3 topology diagrams
+
+# \- Physical map placement for all new devices and locations
+
+# \- Initial configuration on all added devices: hostname, console/VTY passwords, login, enable secret, service password-encryption, user admin, domain name, RSA key generation, SSH access, write memory
+
+# \- Lab report in Markdown, DOCX, and PDF formats
+
+# \- Presentation in Markdown, HTML, and PDF formats
+
+# \- Video recordings for lab execution and defense
+
+# \### Changed
+
+# \- Updated repository structure for lab13
+
+# \- Updated documentation and release links for GitHub and GitVerse
+
+# \- Extended corporate network topology to distributed multi-site architecture
+
+# 
+
 # \## \[v8.0.0] - 2026-05-02
 
 # 

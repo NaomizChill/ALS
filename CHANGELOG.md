@@ -1,6 +1,30 @@
 ﻿# \# Changelog
 
-# 
+# [v11.0.0] - 2026-05-17
+Added
+
+* Lab 15: OSPF dynamic routing — configuring dynamic routing between organization sites
+* Packet Tracer topology file (15.pkt)
+* OSPF process 1 configuration on all gateway routers with area 0 (BACKBONE)
+* Router IDs assigned: `msk-donskaya-gw-1` → 10.128.254.1, `msk-q42-gw-1` → 10.128.254.2, `msk-hostel-gw-1` → 10.128.254.3, `sch-sochi-gw-1` → 10.128.254.4
+* Network 10.0.0.0/8 announced into OSPF area 0 on all routers
+* Direct point-to-point link between msk-q42 and sch-sochi via VLAN 7 (q42-sochi): subnet 10.128.255.8/30
+* Subinterface `FastEthernet0/1.7` on `msk-q42-gw-1` (IP 10.128.255.9/30, description: sochi)
+* Subinterface `FastEthernet0/0.7` on `sch-sochi-gw-1` (IP 10.128.255.10/30, description: q42)
+* VLAN 7 (q42-sochi) created and enabled on `provider-irkolontirskiy-sw-1` and `sch-sochi-irkolontirskiy-sw-1`
+* OSPF neighborship verification: `msk-donskaya-gw-1` — 2 neighbors (FULL/BDR), `msk-q42-gw-1` — 3 neighbors, `msk-hostel-gw-1` — 1 neighbor (FULL/DR), `sch-sochi-gw-1` — 2 neighbors
+* Routing table analysis on all four gateway routers (24, 19, 14, 18 subnets respectively)
+* ICMP simulation: packet path from admin laptop (Donskaya) to pc-sochi-1 (10.130.0.200) via primary route (VLAN 6) — 3 hops: 10.128.6.1 → 10.128.255.6 → 10.130.0.200
+* Failover test: VLAN 6 disabled on `provider-irkolontirskiy-sw-1` — traffic rerouted via `msk-q42-gw-1` and VLAN 7 — 4 hops: 10.128.6.1 → 10.128.255.2 → 10.128.255.10 → 10.130.0.200
+* Primary route restoration: VLAN 6 (sochi) recreated and brought up — OSPF reconverged to 3-hop path
+* Lab report in Markdown, DOCX, and PDF formats
+* Presentation in Markdown, HTML, and PDF formats
+* Video recordings for lab execution and defense
+
+Changed
+
+* Updated repository structure for lab15
+* Updated documentation and release links for GitHub and GitVerse
 
 # \## \[v10.0.0] - 2026-05-09
 
